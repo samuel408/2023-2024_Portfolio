@@ -7,7 +7,7 @@ function NavBar() {
     const navbarStyle = {
         display: 'flex',
 //   justifyContent: 'space-between', 
-      backgroundColor: '#333',
+      backgroundColor: '#7DA2A9',
       color: 'white',
       padding: '10px',
       textAlign: 'right',

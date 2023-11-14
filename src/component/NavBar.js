@@ -1,13 +1,14 @@
 import React from "react";
 import linkedinLogo from '../assets/linkedin.png';
 import githubLogo from '../assets/github.png';
+import {Button} from 'react-bootstrap';
 
 
 function NavBar() {
     const navbarStyle = {
         display: 'flex',
 //   justifyContent: 'space-between', 
-      backgroundColor: '#7DA2A9',
+      backgroundColor: '#373A36',
       color: 'white',
       padding: '10px',
       textAlign: 'right',
@@ -15,9 +16,10 @@ function NavBar() {
     };
   
     const linkStyle = {
-      color: 'white',
+      color: '#E6E2DD',
       margin: '0 10px',
       textDecoration: 'none',
+      backgroundColor: '#D48166'
     };
     
       const iconStyle = {
@@ -39,10 +41,10 @@ function NavBar() {
       <a href="https://github.com/samuel408" target="_blank" rel="noopener noreferrer">
         <img src={githubLogo} style={iconStyle} />
       </a>
-        <a href="/" style={linkStyle}>Home</a>
-        <a href="/about" style={linkStyle}>About</a>
-        <a href="/contact" style={linkStyle}>Contact</a>
-      </div>
+      <a href="/contact" style={linkStyle}>
+  <Button variant="primary" style={{ backgroundColor: '#D48166', border: 'none' }} className="rounded">Contact Me</Button>
+</a>
+        </div>
     );
   }
 

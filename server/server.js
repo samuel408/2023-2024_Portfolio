@@ -4,9 +4,12 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = process.env.PORT || 3001;
-app.use(cors());
-app.use(bodyParser.json());
+const port = process.env.PORT || 5000;
+const corsOptions = {
+    origin: process.env.REACT_APP_SERVER_URL || 'http://localhost:3000',
+  };
+  
+  app.use(cors(corsOptions));app.use(bodyParser.json());
 
 app.post('/', (req, res) => {
     console.log('Received a POST request to /');

@@ -6,9 +6,9 @@ const nodemailer = require('nodemailer');
 const app = express();
 const port =  50000;
 
-// const corsOptions = {
-//     origin: 'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com/' || 'http://localhost:3000',
-//   };
+const corsOptions = {
+    origin: 'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com/' || 'http://localhost:3000',
+  };
   
   app.use(cors(corsOptions));app.use(bodyParser.json());
 

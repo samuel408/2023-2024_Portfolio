@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port =  50000;
 const corsOptions = {
     origin: process.env.REACT_APP_SERVER_URL || 'http://localhost:3000',
   };

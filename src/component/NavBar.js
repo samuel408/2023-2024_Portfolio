@@ -1,10 +1,15 @@
-import React from "react";
+import React,{ useState } from "react";
 import linkedinLogo from '../assets/linkedin.png';
 import githubLogo from '../assets/github.png';
 import {Button} from 'react-bootstrap';
-
+import Contact from './Contact';
 
 function NavBar() {
+
+    const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
     const navbarStyle = {
         display: 'flex',
 //   justifyContent: 'space-between', 
@@ -41,9 +46,12 @@ function NavBar() {
       <a href="https://github.com/samuel408" target="_blank" rel="noopener noreferrer">
         <img src={githubLogo} style={iconStyle} />
       </a>
-      <a href="/contact" style={linkStyle}>
-  <Button variant="primary" style={{ backgroundColor: '#D48166', border: 'none' }} className="rounded">Contact Me</Button>
+      <a style={linkStyle}>
+  <Button  variant="primary"  onClick={handleShowModal} style={{ backgroundColor: '#D48166', border: 'none' }} className="rounded">Contact Me</Button>
 </a>
+{/* Render the ContactModal component */}
+<Contact show={showModal} handleClose={handleCloseModal} />
+    
         </div>
     );
   }

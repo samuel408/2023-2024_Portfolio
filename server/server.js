@@ -7,13 +7,13 @@ const app = express();
 const port =  50000;
 
 const corsOptions = {
-    origin: 'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com:40000/' || 'http://localhost:3000',
+    origin: 'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com' || 'http://localhost:3000',
   };
   
   app.use(cors(corsOptions));app.use(bodyParser.json());
 
 app.post('/', (req, res) => {
-    console.log('Received a POST request to /');
+    console.log('Received a POST request to / from:', req.get('origin'));
 
   const { name, email, message } = req.body;
 

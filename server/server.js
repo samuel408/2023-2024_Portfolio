@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(bodyParser.json());
 
-app.post(process.env.REACT_APP_SERVER_URL, (req, res) => {
+app.post('/', (req, res) => {
     console.log('Received a POST request to /');
 
   const { name, email, message } = req.body;

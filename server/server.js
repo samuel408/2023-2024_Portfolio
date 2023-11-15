@@ -9,6 +9,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/', (req, res) => {
+    console.log('Received a POST request to /');
+
   const { name, email, message } = req.body;
 
   // Use nodemailer to send an email

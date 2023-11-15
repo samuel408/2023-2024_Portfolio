@@ -12,13 +12,13 @@ function Contact({ show, handleClose }) {
   };
   const handleSubmit = () => {
     // Make a POST request to your server's API endpoint
-    fetch(process.env.REACT_APP_SERVER_URL || 'http://localhost:50000', {
-        method: 'POST',
-      headers: {
+    fetch(process.env.REACT_APP_SERVER_URL || 'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com' {
+    method: 'POST',
+    headers: {
         'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
+    },
+    body: JSON.stringify(formData),
+})
       .then((response) => response.json())
       .then((data) => {
         console.log('Form submitted successfully:', data);

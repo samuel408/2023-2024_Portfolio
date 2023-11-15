@@ -12,7 +12,7 @@ function Contact({ show, handleClose }) {
   };
   const handleSubmit = () => {
     // Make a POST request to your server's API endpoint
-    fetch(process.env.REACT_APP_SERVER_URL, {
+    fetch(process.env.REACT_APP_SERVER_URL || 'http://localhost:3000', {
         method: 'POST',
       headers: {
         'Content-Type': 'application/json',

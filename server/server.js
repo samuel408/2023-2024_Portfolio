@@ -4,8 +4,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = 3001; // Set your desired port
-
+const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(bodyParser.json());
 

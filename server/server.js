@@ -13,7 +13,7 @@ const corsOptions = {
   app.use(cors(corsOptions));app.use(bodyParser.json());
 
 app.post('/', (req, res) => {
-    console.log('Received a POST request to /3000');
+    console.log('Received a POST request to /');
 
   const { name, email, message } = req.body;
 

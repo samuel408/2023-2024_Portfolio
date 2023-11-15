@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run start:react\" \"npm run start:server\"",
-    "start:react": "react-scripts start ",
+    "start:react": "react-scripts start --port 40000 ",
     "start:server": "cd server && node server.js", 
     "build": "react-scripts build",
     "test": "react-scripts test",

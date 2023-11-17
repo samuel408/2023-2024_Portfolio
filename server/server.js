@@ -4,7 +4,8 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = 'api/contact';
+const port = 50000;
+const apiEndPoint = 'api/contact';
 
 const corsOptions = {
     origin:  'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com/',
@@ -12,7 +13,7 @@ const corsOptions = {
   
   app.use(cors(corsOptions));app.use(bodyParser.json());
 
-app.post('/', (req, res) => {
+app.post(apiEndPoint, (req, res) => {
     console.log('Received a POST request to / from:', req.get('origin'));
 
   const { name, email, message } = req.body;

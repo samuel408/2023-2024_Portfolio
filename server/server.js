@@ -4,10 +4,10 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = 50000;
+const port = 3001;
 
 const corsOptions = {
-    origin: 'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com' || 'http://localhost:3000',
+    origin:  'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com/',
   };
   
   app.use(cors(corsOptions));app.use(bodyParser.json());

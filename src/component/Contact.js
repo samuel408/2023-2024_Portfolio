@@ -12,7 +12,7 @@ function Contact({ show, handleClose }) {
   };
   const handleSubmit = () => {
     // Make a POST request to your server's API endpoint
-    fetch(  'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com/api/contact', {
+    fetch(  'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com:50000/api/contact', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',

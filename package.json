@@ -48,6 +48,8 @@
   },
   "engines": {
     "node": "21.x"
-  }
- 
+  },
+  "homepage": "https://sleepy-sierra-38019-875c43c0002d.herokuapp.com",
+  "proxy": "https://sleepy-sierra-38019-875c43c0002d.herokuapp.com" 
+
 }

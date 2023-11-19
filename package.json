@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "npm run start:react",
-    "start:react": "react-scripts start",
+    "start:react": "react-scripts star  --host 0.0.0.0",
     "start:server": "cd server && node server.js", 
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,6 +50,6 @@
     "node": "21.x"
   },
   "homepage": "https://sleepy-sierra-38019-875c43c0002d.herokuapp.com",
-  "proxy": "https://samuelsaldivar2024-82a9b767cf09.herokuapp.com/api/contact" 
+  "proxy": "https://samuelsaldivar2024-82a9b767cf09.herokuapp.com/" 
 
 }

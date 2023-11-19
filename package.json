@@ -50,6 +50,6 @@
     "node": "21.x"
   },
   "homepage": "https://sleepy-sierra-38019-875c43c0002d.herokuapp.com",
-  "proxy": "https://sleepy-sierra-38019-875c43c0002d.herokuapp.com/api/contact" 
+  "proxy": "https://samuelsaldivar2024-82a9b767cf09.herokuapp.com/api/contact" 
 
 }

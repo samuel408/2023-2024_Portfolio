@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 50000;
 
 const corsOptions = {
-    origin:  'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com/',
+    origin:  process.env.REACT_APP_SERVER_URL||'https://sleepy-sierra-38019-875c43c0002d.herokuapp.com/',
   };
   
   app.use(cors(corsOptions));

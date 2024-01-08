@@ -12,7 +12,7 @@ function Contact({ show, handleClose }) {
   };
   const handleSubmit = () => {
     // Make a POST request to your server's API endpoint
-    fetch(  process.env.NODE_SERVER || 'https://samuelsaldivar2024-82a9b767cf09.herokuapp.com/api/contact' , {
+    fetch(  process.env.NODE_SERVER ||'http://localhost:3001' , {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
